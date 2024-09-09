@@ -1,0 +1,8 @@
+{
+  "name": "NACOS-bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:c0deMercenary/NACOS-bootcamp.git",
+  "author": "asahelcode <hoyx0101@gmail.com>",
+  "license": "MIT"
+}
