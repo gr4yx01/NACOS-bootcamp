@@ -1,14 +1,15 @@
 import express from 'express';
-import userRouter from './routers/user.js'
+import userRouter from './router/user.js'
 
-const app = express()
+const app = express();
 
-//middleware
+app.use((req, res, next) => {
+    console.log('Application middleware');
+    next();
+})
 
-app.use(express.json())
+app.use('/users', userRouter)
 
-app.use(userRouter)
-
-app.listen(4000, () => {
-    console.log('Server currently working')
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
 })
